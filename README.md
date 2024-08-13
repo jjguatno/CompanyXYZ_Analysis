@@ -109,3 +109,94 @@ The data provided for Company XYZ spans two years and includes detailed transact
 
 - **Customer Feedback:**
   - Gather and analyze customer feedback, especially in underperforming regions or product lines, to inform decisions and improve offerings.
+  - 
+
+# Backend Preview
+
+[Project Year 1 CSV](https://github.com/jjguatno/CompanyXYZ_Analysis/blob/10e2ca03f7ca028e81e6103ca85cae7d33b8a2d3/Project_year_1.csv)
+
+| dteday    | season | yr | mnth | hr | holiday | weekday | workingday | buyer_type  | Product_Type | buyers | Location   |
+|-----------|--------|----|------|----|---------|---------|------------|-------------|--------------|--------|------------|
+| 1/1/2021  | 1      | 0  | 1    | 0  | 0       | 6       | 0          | Non-Member  | D            | 87     | Location 1 |
+| 1/1/2021  | 1      | 0  | 1    | 1  | 0       | 6       | 0          | Member      | D            | 6      | Location 3 |
+| 1/1/2021  | 1      | 0  | 1    | 2  | 0       | 6       | 0          | Member      | F            | 121    | Location 5 |
+
+[Project Year 2 CSV](https://github.com/jjguatno/CompanyXYZ_Analysis/blob/10e2ca03f7ca028e81e6103ca85cae7d33b8a2d3/Project_year_2.csv)
+
+| dteday    | season | yr | mnth | hr | holiday | weekday | workingday | buyer_type | product_type | buyers | Location   |
+|-----------|--------|----|------|----|---------|---------|------------|------------|--------------|--------|------------|
+| 1/1/2022  | 1      | 1  | 1    | 0  | 0       | 0       | 0          | Member     | D            | 125    | Location 4 |
+| 1/1/2022  | 1      | 1  | 1    | 1  | 0       | 0       | 0          | Member     | E            | 96     | Location 1 |
+| 1/1/2022  | 1      | 1  | 1    | 2  | 0       | 0       | 0          | Member     | F            | 48     | Location 5 |
+
+[Project Cost Table 1](https://github.com/jjguatno/CompanyXYZ_Analysis/blob/10e2ca03f7ca028e81e6103ca85cae7d33b8a2d3/Project_cost_table_1.csv)
+
+| product_type | price | COGS  |
+|--------------|-------|-------|
+| A            | 37.29 | 12.41 |
+| B            | 15.68 |  5.29 |
+| C            | 84.00 | 26.73 |
+| D            | 77.82 | 19.52 |
+| E            | 28.90 |  6.92 |
+| F            | 53.46 | 15.64 |
+
+[Project Cost Table 2](https://github.com/jjguatno/CompanyXYZ_Analysis/blob/10e2ca03f7ca028e81e6103ca85cae7d33b8a2d3/Project_cost_table_2.csv)
+
+| Location   | Rent | Utilities |
+|------------|------|-----------|
+| Location 2 | 1400 | 751       |
+| Location 4 | 2500 | 1009      |
+| Location 3 | 1350 | 772       |
+| Location 1 | 1250 | 703       |
+| Location 5 | 3500 | 1321      |
+
+[SSMS SQL Query](https://github.com/jjguatno/CompanyXYZ_Analysis/blob/10e2ca03f7ca028e81e6103ca85cae7d33b8a2d3/Project_Query.sql)
+
+```sql
+WITH cte AS (
+    SELECT dteday, weekday, yr, hr, buyer_type, product_type, buyers, Location
+    FROM [Project_year_1]
+    UNION ALL
+    SELECT dteday, weekday, yr, hr, buyer_type, product_type, buyers, Location
+    FROM [Project_year_2]
+)
+SELECT 
+    CASE
+        WHEN weekday = 0 THEN 'Monday'
+        WHEN weekday = 1 THEN 'Tuesday'
+        WHEN weekday = 2 THEN 'Wednesday'
+        WHEN weekday = 3 THEN 'Thursday'
+        WHEN weekday = 4 THEN 'Friday'
+        WHEN weekday = 5 THEN 'Saturday'
+        WHEN weekday = 6 THEN 'Sunday'
+    END AS DayName,
+    CASE    
+        WHEN yr = 0 THEN '2021'
+        WHEN yr = 1 THEN '2022'
+    END AS YrFormatted,
+    CASE
+        WHEN hr = 0 THEN '12 AM'
+        WHEN hr < 12 THEN CONCAT(hr, ' AM')
+        WHEN hr = 12 THEN '12 PM'
+        WHEN hr > 12 THEN CONCAT(hr - 12, ' PM')
+    END AS HrFormatted,
+    hr,
+    weekday,
+    dteday,
+    buyer_type,
+    a.product_type,
+    buyers,
+    a.Location,
+    ROUND(a.buyers * b.price, 2) AS revenue,
+    ROUND(a.buyers * b.price - b.COGS * a.buyers - c.Rent - c.Utilities, 2) AS profit
+FROM 
+    cte a
+LEFT JOIN 
+    Project_cost_table_1 b ON a.product_type = b.product_type
+LEFT JOIN
+    Project_cost_table_2 c ON a.Location = c.Location;
+
+
+
+
+
