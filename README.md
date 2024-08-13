@@ -8,18 +8,6 @@ Interactive PowerBI report can be found [here.](https://app.powerbi.com/reportEm
 
 Company XYZ, based in North Carolina, is a retail company that offers a diverse range of consumer products across multiple locations on both the east and west coasts. The company has a strong membership program that distinguishes between members and non-members, providing exclusive offers and promotional benefits to its loyal customers.
 
-### Data Overview
-
-The data provided for Company XYZ spans two years and includes detailed transactional records, cost structures, and performance metrics across various products and locations. The datasets consist of:
-
-1. **Transactional Data for 2021 and 2022:**
-   - **Details:** Includes daily sales data broken down by product type, buyer type (Member or Non-Member), and location. This data also captures seasonal trends, weekday performance, and hourly sales.
-   
-2. **Product Cost Data:**
-   - **Details:** Provides insights into the pricing, cost of goods sold (COGS), and associated profitability for each product type sold by Company XYZ.
-
-3. **Location-Specific Operational Costs:**
-   - **Details:** Includes fixed costs such as rent and utilities for each store location, which are essential for understanding the overall profitability of each geographical area.
 
 # Key Insights
 
@@ -109,9 +97,21 @@ The data provided for Company XYZ spans two years and includes detailed transact
 
 - **Customer Feedback:**
   - Gather and analyze customer feedback, especially in underperforming regions or product lines, to inform decisions and improve offerings.
-  - 
 
 # Backend Preview
+
+### Data Overview
+
+The data provided for Company XYZ covers a two-year period and includes detailed transactional records, cost structures, and performance metrics across various products and locations. This data was sourced from the Finance and Accounting department through NetSuite, transformed using Microsoft SQL Server Management Studio, and then loaded into PowerBI Desktop for analysis. The datasets consist of:
+
+1. **Transactional Data for 2021 and 2022:**
+   - **Details:** Includes daily sales data broken down by product type, buyer type (Member or Non-Member), and location. This data also captures seasonal trends, weekday performance, and hourly sales.
+   
+2. **Product Cost Data:**
+   - **Details:** Provides insights into the pricing, cost of goods sold (COGS), and associated profitability for each product type sold by Company XYZ.
+
+3. **Location-Specific Operational Costs:**
+   - **Details:** Includes fixed costs such as rent and utilities for each store location, which are essential for understanding the overall profitability of each geographical area.
 
 [Project Year 1 CSV](https://github.com/jjguatno/CompanyXYZ_Analysis/blob/10e2ca03f7ca028e81e6103ca85cae7d33b8a2d3/Project_year_1.csv)
 
