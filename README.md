@@ -4,6 +4,11 @@ Interactive PowerBI report can be found [here.](https://app.powerbi.com/reportEm
 
 ![image](https://github.com/user-attachments/assets/ba11f7e0-544a-43b5-aa90-368886d8fddd)
 
+# Table of Contents
+- [Introduction](#company-xyz-introduction)
+- [Key Insights](#key-insights)
+- [Recommendations](#recommendations)
+- [Backend Preview](#backend-preview)
 ## Company XYZ Introduction
 
 Company XYZ, based in North Carolina, is a retail company that offers a diverse range of consumer products across multiple locations on both the east and west coasts. The company has a strong membership program that distinguishes between members and non-members, providing exclusive offers and promotional benefits to its loyal customers.
