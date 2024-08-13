@@ -7,7 +7,7 @@ Interactive PowerBI report can be found [here.](https://app.powerbi.com/reportEm
 - [Introduction](#company-xyz-introduction)
 - [Key Insights](#key-insights)
 - [Recommendations](#recommendations)
-- [Backend Preview](#backend-preview)
+- [Backend Overview](#backend-overview)
 ## Company XYZ Introduction
 
 Company XYZ, based in North Carolina, is a retail company that offers a diverse range of consumer products across multiple locations on both the east and west coasts. The company has a strong membership program that distinguishes between members and non-members, providing exclusive offers and promotional benefits to its loyal customers.
@@ -102,7 +102,7 @@ Company XYZ, based in North Carolina, is a retail company that offers a diverse 
 - **Customer Feedback:**
   - Gather and analyze customer feedback, especially in underperforming regions or product lines, to inform decisions and improve offerings.
 
-# Backend Preview
+# Backend Overview
 
 ### Data Overview
 
