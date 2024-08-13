@@ -1,10 +1,11 @@
 # Company XYZ Analysis (2021-2022)
+
 Interactive PowerBI report can be found [here.](https://app.powerbi.com/reportEmbed?reportId=1ce41015-0fc1-43a9-9e53-20da460e1f4a&autoAuth=true&ctid=7da8c524-48b4-4a3d-b1fb-7e8b1c7c73a5)
+
 ![image](https://github.com/user-attachments/assets/ba11f7e0-544a-43b5-aa90-368886d8fddd)
 
-
-
 ## Company XYZ Introduction
+
 Company XYZ, based in North Carolina, is a retail company that offers a diverse range of consumer products across multiple locations on both the east and west coasts. The company has a strong membership program that distinguishes between members and non-members, providing exclusive offers and promotional benefits to its loyal customers.
 
 ### Data Overview
@@ -48,6 +49,7 @@ The data provided for Company XYZ spans two years and includes detailed transact
   - **Non-Members** generate a lower profit of **$29M** from **$81M** in revenue, with **1.37M** buyers. This shows that member loyalty programs are effective and that members have a higher lifetime value.
 
 ## 4. Performance Over Time
+
 - **Seasonal Trends:** Both years exhibit a consistent uptick in customers during the summer months (June-August), leading to increased revenue and profit.
 - **Daily Revenue Trends:** Monday generates the lowest average revenue, while Friday, Saturday, and Sunday see significant revenue increases.
 - **Critical Periods:** February and November have been identified as potential risk months due to a noticeable decline in customer numbers, impacting revenue and profit.
