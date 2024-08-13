@@ -1,7 +1,7 @@
 # Company XYZ Analysis (2021-2022)
 
 Interactive PowerBI report can be found [here.](https://app.powerbi.com/reportEmbed?reportId=1ce41015-0fc1-43a9-9e53-20da460e1f4a&autoAuth=true&ctid=7da8c524-48b4-4a3d-b1fb-7e8b1c7c73a5)
-![Report GIF](https://github.com/jjguatno/CompanyXYZ_Analysis/blob/ede2c7f27a9735926e495e30d6af73cd1b2cbf31/Report.gif)
+![Report GIF](https://github.com/jjguatno/CompanyXYZ_Analysis/blob/288e90fe741bb606c15a1ca84845ce28f5f9e135/Report.gif)
 
 # Table of Contents
 - [Introduction](#company-xyz-introduction)
