@@ -23,8 +23,8 @@ Company XYZ, based in North Carolina, is a retail company that offers a diverse 
 
 - **Underperforming Products:**
   - **Product B** is significantly underperforming, with a negative profit of **-$5M**. The primary cause of this underperformance seems to be linked to west-coast locations, where the majority of the losses are concentrated. This regional impact appears to be the key factor driving Product B’s overall negative performance.
-  - **Product A** is generating a modest profit of **$1M**. The positive profit is primarily driven by east-coast locations, while west-coast locations are contributing to the overall performance with negative profit.
-  - **Product E** is yielding minimal profit, with only **$270K** in total. Like Product A, the positive profit is coming from east-coast locations, while west-coast locations are dragging down overall performance with negative profit contributions.
+  - **Product A** is generating minimal profit of **$1M**. The positive profit is primarily driven by east-coast locations, while west-coast locations are contributing to the overall performance with negative profit.
+  - **Product E** is also yielding minimal profit, with only **$270K** in total. Like Product A, the positive profit is coming from east-coast locations, while west-coast locations are dragging down overall performance with negative profit contributions.
 
 ## 2. Regional Performance
 
