@@ -18,7 +18,7 @@ Company XYZ, based in North Carolina, is a retail company that offers a diverse 
 ## 1. Product Performance
 
 - **Top-Performing Products:**
-  - **Product D** stands out as the most profitable product, generating **$54M** in profit from **$112M** in revenue. It has a strong customer base, with a total of **1.44M** customers.
+  - **Product D** stands out as the most profitable product, generating **$54M** in profit from **$112M** in revenue. It has a strong customer base, with a total of **1.4M** customers.
   - **Product C** also shows strong performance, contributing **$34M** in profit from **$80M** in revenue.
 
 - **Underperforming Products:**
@@ -29,16 +29,16 @@ Company XYZ, based in North Carolina, is a retail company that offers a diverse 
 ## 2. Regional Performance
 
 - **Top-Performing Location:**
-  - **Location 1** is the most profitable, contributing **$39M** in profit from **$73M** in revenue. This location has the highest number of buyers (**1.23 million**), indicating home-state advantage.
+  - **Location 1** is the most profitable, contributing **$39M** in profit from **$73M** in revenue. This location has the highest number of buyers (**1.2M**), indicating home-state advantage.
 
 - **Underperforming Location:**
-  - **Location 5** generates the lowest profit, with **$4M** from **$52M** in revenue, despite serving a moderate customer base of **877.02K**. This may indicate higher operational costs or less favorable market conditions, likely influenced by the location's distance from Company XYZ’s home state of North Carolina.
+  - **Location 5** generates the lowest profit, with **$4M** from **$52M** in revenue, despite serving a moderate customer base of **877K**. This may indicate higher operational costs or less favorable market conditions, likely influenced by the location's distance from Company XYZ’s home state of North Carolina.
 
 ## 3. Customer Segment Performance
 
 - **Members vs. Non-Members:**
-  - **Members** contribute significantly more to the company’s profitability, with a total profit of **$72M** from **$201M** in revenue. They account for **3.39M** customers.
-  - **Non-Members** generate a lower profit of **$29M** from **$81M** in revenue, with **1.37M** buyers. This shows that member loyalty programs are effective and that members have a higher lifetime value.
+  - **Members** contribute significantly more to the company’s profitability, with a total profit of **$72M** from **$201M** in revenue. They account for **3.4M** customers.
+  - **Non-Members** generate a lower profit of **$29M** from **$81M** in revenue, with **1.4M** customers. This shows that member loyalty programs are effective and that members have a higher lifetime value.
 
 ## 4. Performance Over Time
 
@@ -109,7 +109,7 @@ Company XYZ, based in North Carolina, is a retail company that offers a diverse 
 The data provided for Company XYZ covers a two-year period and includes detailed transactional records, cost structures, and performance metrics across various products and locations. This data was sourced from the Finance and Accounting department through NetSuite, transformed using Microsoft SQL Server Management Studio, and then loaded into PowerBI Desktop for analysis. The datasets consist of:
 
 1. **Transactional Data for 2021 and 2022:**
-   - **Details:** Includes daily sales data broken down by product type, buyer type (Member or Non-Member), and location. This data also captures seasonal trends, weekday performance, and hourly sales.
+   - **Details:** Includes daily sales data broken down by product type, customer type (Member or Non-Member), and location. This data also captures seasonal trends, weekday performance, and hourly sales.
    
 2. **Product Cost Data:**
    - **Details:** Provides insights into the pricing, cost of goods sold (COGS), and associated profitability for each product type sold by Company XYZ.
