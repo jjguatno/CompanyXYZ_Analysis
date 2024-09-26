@@ -154,7 +154,7 @@ The data provided for Company XYZ covers a two-year period and includes detailed
 | Location 1 | 1250 | 703       |
 | Location 5 | 3500 | 1321      |
 
-[SSMS SQL Query](https://github.com/jjguatno/CompanyXYZ_Analysis/blob/10e2ca03f7ca028e81e6103ca85cae7d33b8a2d3/Project_Query.sql)
+[SQL Query](https://github.com/jjguatno/CompanyXYZ_Analysis/blob/10e2ca03f7ca028e81e6103ca85cae7d33b8a2d3/Project_Query.sql)
 
 ```sql
 WITH cte AS (
